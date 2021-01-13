@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name" : "PlayShare",
+    "description": "App to play together youtibe vidéo",
+    "version": "1.0",
+    "permissions": [
+        "http://*/*",
+        "https://*/*",
+        "tabs"
+
+    ],
+    "browser_action":{
+        "default_icon": "./youtube.png",
+        "default_popup" : "popup.html"
+    },
+    "icons": {
+        "128": "./youtube.png"
+    }
+
+}
