@@ -1,4 +1,3 @@
-<script src="js/app.js"></script>
 <style>
     
     @font-face {
@@ -13,7 +12,7 @@
 
     .main_div{
         width: 500px;
-        height: 300px;
+        height: 500px;
         background-color: #181818;
         margin: 0%;
     }
@@ -169,10 +168,12 @@
         <h1>PlayShare</h1>
     </header>
     <div class="container">
-        <h1 class="your_id">Votre ID : 1250148</h1>
+        <h1 class="your_id"  id="personal_id">Votre ID : 1250148</h1>
         <div class="form__group">
-            <input type="text" class="form__input" id="name" placeholder="ID AMI" required="" />
+            <input type="text" class="form__input" id="id_friend_input" placeholder="ID AMI" required="" />
         </div>
-        <a href="https://www.youtube.com/feed/subscriptions" class="btn effect04" data-sm-link-text="Let's go !" target="_blank"><span>Rejoindre</span></a>
+        <a href="https://www.youtube.com/feed/subscriptions" class="btn effect04" data-sm-link-text="Let's go !" target="_blank" id="button_join"><span>Rejoindre</span></a>
     </div>
 </div>
+
+<script src="js/app.js"></script>
