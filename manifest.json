@@ -8,7 +8,13 @@
         "https://*/*",
         "tabs",
         "storage",
-        "activeTab"
+        "activeTab",
+        "background",
+        "notifications",
+        "activeTab",
+        "webNavigation"
+
+
 
     ],
     "browser_action":{
@@ -17,6 +23,16 @@
     },
     "icons": {
         "128": "./youtube.png"
-    }
+    },
+    
+    "content_scripts": [
+        {
+          "matches": ["https://www.youtube.com/watch*"],
+          "run_at": "document_end",
+          "js": ["js/youtube.js"]
+        }
+      ]
+
+        
 
 }
